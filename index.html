@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>shoppingmadeeasy</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="icon" href="img/logo.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
-<body onscroll="scroll()">
+<body>
   
     <div class="container">
 
@@ -20,10 +22,30 @@
             <i class="fa fa-ellipsis-v" id="menu"></i>
 
             <form id="search_form">
-                <input type="text" class="search_text" placeholder="search getting tool" required>
+                <input type="text" class="search_text" placeholder="search..." required>
                 <button type="submit" class="search_button"><i class="fa fa-search"></i></button>
             </form>
 
+        </div>
+
+        <div id="menu_div">
+            <i class="fa fa-close" id="close"></i>
+            <div id="menu_items">
+                <p class="menu_item"><i class="fa fa-home menu_icon"></i>Home</p>
+                <p class="menu_item"><i class="fa fa-user-circle menu_icon"></i>Login</p>
+                <p class="menu_item"><i class="fa fa-user-plus menu_icon"></i>Register</p>
+                <p class="menu_item"><i class="fa fa-book menu_icon"></i>About us</p>
+                <p class="menu_item"><i class="fa fa-phone menu_icon"></i>Contacts</p>
+                
+                <p class="menu_item"><i class="fa fa-list-alt menu_icon"></i>Categories</p>
+                <p class="menu_item"><i class="fa fa-shopping-basket menu_icon"></i>on special</p>
+                <p class="menu_item"><i class="fa fa-shopping-basket menu_icon"></i>on promotion</p>
+                <a href="sales"><p class="menu_item"><i class="fa fa-shopping-basket menu_icon"></i>on sale</p></a>
+                <p class="menu_item"><i class="fa fa-building menu_icon"></i>shops</p>
+                <p class="menu_item"><i class="fa fa-book menu_icon"></i>suggestions</p>
+                <p class="menu_item"><i class="fa fa-info menu_icon"></i>terms & conditions</p>
+                
+            </div>
         </div>
 
         <div class="fixed_basket">
@@ -46,6 +68,11 @@
                         <p class="c_details_p">name : <span class="c_details_span">mercedes bens mercedes bens mercedes bens</span></p>
                         <p class="c_details_p">price : R<span class="c_details_span">2000.00</span></p>
                         <p class="c_details_p">shop : <span class="c_details_span">shoprite_paledi shoprite_paledi shoprite_paledi shoprite_paledi</span></p>
+                        <p class="c_details_p likes"><i class="fa fa-heart"><span class="likes_span">1000+</span></i>
+                            <i class="fa fa-thumbs-up"><span class="likes_span">1000+</span></i>
+                        </p>
+                    
+                    
                     </div>
                 </div>
             </div>
@@ -57,16 +84,21 @@
                 <div class="carousel_cart">
                         <div class="carousel_cart_img">
                             <img src="img/1.png">
+                            
                         </div>
                         <div class="carousel_cart_details">
                             <p class="c_details_p">name : <span class="c_details_span">mercedes bens mercedes bens mercedes bens</span></p>
                             <p class="c_details_p">price : R<span class="c_details_span">2000.00</span></p>
                             <p class="c_details_p">shop : <span class="c_details_span">shoprite_paledi shoprite_paledi shoprite_paledi shoprite_paledi</span></p>
+                            <p class="c_details_p likes"><i class="fa fa-heart"><span class="likes_span">1000+</span></i>
+                                <i class="fa fa-thumbs-up"><span class="likes_span">1000+</span></i>
+                            </p>
+                        
                         </div>
                     </div>
             </div>
 
-            <div class="carousel_divs">
+            <div class="carousel_divs" id="carousel_divs_last">
                     <p class="carousel_arrow left"><i class="fa fa-angle-left"></i></p>
                     <p class="carousel_arrow right"><i class="fa fa-angle-right"></i></p>
                 <h4 class="carousel_headers">on sale<span class="carousel_header_span"></span></h4>
@@ -78,8 +110,117 @@
                             <p class="c_details_p">name : <span class="c_details_span">mercedes bens mercedes bens mercedes bens</span></p>
                             <p class="c_details_p">price : R<span class="c_details_span">2000.00</span></p>
                             <p class="c_details_p">shop : <span class="c_details_span">shoprite_paledi shoprite_paledi shoprite_paledi shoprite_paledi</span></p>
+                            <p class="c_details_p likes"><i class="fa fa-heart"><span class="likes_span">1000+</span></i>
+                                <i class="fa fa-thumbs-up"><span class="likes_span">1000+</span></i>
+                            </p>
+                        
                         </div>
                     </div>
+            </div>
+        </div>
+
+        <div id="category_shops">
+            <div id="shops">
+               <h4 class="h4_cat_shops">shops<span class="span_cat_shops">0</span></h4>
+               <ul class="ul_shops">
+                   <li>shoprite_paledi</li>
+                   <li>shoprite_paledi</li>
+                   <li>shoprite_paledi</li>
+                   <li>shoprite_paledi</li>
+                   <li>shoprite_paledi</li>
+                   <li>shoprite_paledi</li>
+                   <li>shoprite_paledi</li>
+                   <li>shoprite_paledi</li>
+                   <li>shoprite_paledi</li>
+                   <li>see more..</li>
+               </ul> 
+            </div>
+            <div id="categories">
+                <h4 class="h4_cat_shops">categories<span class="span_cat_shops">0</span></h4> 
+                <ul class="ul_shops">
+                        <li>shoprite_paledi</li>
+                        <li>shoprite_paledi</li>
+                        <li>shoprite_paledi</li>
+                        <li>shoprite_paledi</li>
+                        <li>shoprite_paledi</li>
+                        <li>shoprite_paledi</li>
+                        <li>shoprite_paledi</li>
+                        <li>shoprite_paledi</li>
+                        <li>shoprite_paledi</li>
+                        <li>see more..</li>
+                    </ul>
+            </div>
+        </div>
+    
+        <div id="how_to">
+            <h4>How to ...</h4>
+            <div class="how_to_div">
+                <p class="how_to_p">Register</p>
+                <p class="how_to_p">Login</p>
+                <p class="how_to_p">see on sale items</p>
+                <p class="how_to_p">see on promotion items</p>
+                <p class="how_to_p">see on special items</p>
+                <p class="how_to_p">how to buy</p>
+                <p class="how_to_p">Register</p>
+                <p class="how_to_p">Register</p>
+                <p class="how_to_p">Register</p>
+                <p class="how_to_p">Register</p>
+               
+
+            </div>
+            <div class="how_to_div">
+                    <p class="how_to_p">Register</p>
+                    <p class="how_to_p">Login</p>
+                    <p class="how_to_p">see on sale items</p>
+                    <p class="how_to_p">see on promotion items</p>
+                    <p class="how_to_p">see on special items</p>
+                    <p class="how_to_p">how to buy</p>
+                    <p class="how_to_p">Register</p>
+                    <p class="how_to_p">Register</p>
+                    <p class="how_to_p">Register</p>
+                    <p class="how_to_p">Register</p>
+            </div>
+            <div class="how_to_div">
+                    <p class="how_to_p">Register</p>
+                    <p class="how_to_p">Login</p>
+                    <p class="how_to_p">see on sale items</p>
+                    <p class="how_to_p">see on promotion items</p>
+                    <p class="how_to_p">see on special items</p>
+                    <p class="how_to_p">how to buy</p>
+                    <p class="how_to_p">Register</p>
+                    <p class="how_to_p">Register</p>
+                    <p class="how_to_p">Register</p>
+                    <p class="how_to_p">Register</p>
+            </div>
+        </div>
+
+        <div id="what_wedo">
+            <div class="column_wedo">
+                <h4 class="wedo_header">what we do(our services)</h4>
+                <p><i class="fa fa-angle-right"></i>Act as an intermediate between the markets and the consumers.</p>
+                <p><i class="fa fa-angle-right"></i>Provide the consumers with the available, on special and on promotion items from the markets.</p>
+                <p><i class="fa fa-angle-right"></i> Provide consumers with online shopping</p>
+                <p><i class="fa fa-angle-right"></i>Provide consumers with the latest prices of items on the market</p>
+                
+            </div>
+            <div class="column_wedo">
+                <h4 class="wedo_header">mission</h4>
+                <p><i class="fa fa-angle-right"></i>To Optimise the people's time by taking their duties and convering them into  ours.</p>
+            </div>
+            <div class="column_wedo">
+                <h4 class="wedo_header">vision</h4>
+                <p><i class="fa fa-angle-right"></i>Provide the best and easy ways to shop for everyone</p>
+            </div>
+        </div>
+
+        
+
+        <div id="footer">
+            <div id="banks">
+
+            </div>
+            <div id="slog">
+                shopping made easy &copy est 2019<br> <a href="">terms & conditions</a>
             </div>
         </div>
 
@@ -117,15 +258,7 @@
 
 </body>
 
-<script>
-
-
-
-
-
-
-
-</script>
+<script src="js/menu.js"></script>
 
 
 </html>

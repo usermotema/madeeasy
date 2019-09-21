@@ -1,6 +1,31 @@
 *{
     padding: 0%;
     margin: 0%;
+    
+}
+
+.fa-heart{
+    color:red;
+    margin-left: 10px;
+}
+.fa-thumbs-up{
+    color:yellow;
+    margin-left: 20px;
+}
+
+.fa-heart:hover{
+    border-radius: 10px;
+    background: white;
+    padding: 1px;
+    text-align: center;
+}
+.fa-thumbs-up:hover{
+    background: green;
+    padding:1px;
+    text-align: center;
+    border-radius: 10px;
+    color:white;
+    
 }
 
 
@@ -17,10 +42,11 @@ video{
 
 .container{
     position: relative;
-    height: 100vh;
+    
     width: 100%;
     background: rgb(27, 24, 24);
     opacity: 0.85;
+    
 }
 
 
@@ -33,8 +59,8 @@ video{
     top: 0;
     opacity: 1;
     width: 100%;
-    
-    box-shadow: 0 0 7px rgb(9, 107, 24);
+    z-index:10000;
+    box-shadow: 0 0 7px lime;
 }
 
 #menu{
@@ -47,6 +73,7 @@ video{
     padding: 5px 10px;
     box-shadow: 0 0 5px white;
 }
+
 
 #menu:hover{
     background: rgb(7, 104, 57);
@@ -89,7 +116,82 @@ video{
 
 /* navbar */
 
+/* menu */
 
+#menu_div{
+    height: 100vh;
+    width: 100%;
+    background: #000000;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    color: white;
+    z-index: 10000;
+    display: none;
+}
+
+#menu_items a{
+    text-decoration: none;
+    color:white;
+}
+
+#menu_items{
+    width: 500px;
+    height: 500px;
+    background: black;
+    color: white;
+    
+    opacity: 1;
+    
+}
+
+#menu_items p{
+    border-bottom: 1px solid silver;
+    border-bottom-right-radius: 10px;
+    padding: 5px 0;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#close{
+    padding: 7px;
+    border-radius: 50%;
+    color: red;
+    background: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    box-shadow: 0 0 10px red;
+    cursor: pointer;
+}
+
+#close:hover{
+    background: red;
+    color: white;
+    padding: 11px;
+}
+
+#menu_items p:hover{
+    box-shadow: 0 0 5px limegreen;
+    border-radius: 0;
+}
+
+.menu_icon{
+    float: left;
+    margin-left: 10px;
+}
+
+
+@media screen and (max-width:425px){
+    #menu_items{
+        width: 100%;
+        font-size: 15px;
+    }
+}
+
+
+/* menu */
 
 
 /* side bar */
@@ -129,7 +231,7 @@ video{
 /* carousel */
 
 .carousel{
-    min-height: 400px;
+    min-height: 470px;
     width: 100%;
     position: relative;
     top: 50px;
@@ -139,8 +241,8 @@ video{
 .carousel_divs{
     position: relative;
     width: 30%;
-   margin-left: 34px;
-    height: 400px;
+    margin-left: 34px;
+    height: 420px;
     background: black;
     color: white;
     
@@ -175,7 +277,7 @@ video{
     width: 80%;
     margin: 0 auto;
     box-shadow: 0 0 5px white;
-    height: 360px;
+    height: 380px;
     cursor: pointer;
 }
 
@@ -191,7 +293,7 @@ video{
 }
 
 .carousel_cart_details{
-    height: 100px;
+    height: 125px;
     width: 100%;
     overflow: hidden;
     
@@ -216,14 +318,72 @@ video{
     
 }
 
+.likes{
+    background: #586d58;
+    width: 60%;
+    float: right;
+    text-indent: 0;
+    border-radius: 20px 0 0 0;
+    padding: 1px 0;
+    overflow: visible;
+    font-size: 14px;
+}
+
+
+@media screen and (max-width:1095px){
+    .carousel_divs{
+        width: 29%;
+    }
+}
+
+
+@media screen and (max-width:860px){
+    .carousel_divs{
+        width: 28%;
+        
+    }
+}
 
 
 @media screen and (max-width:768px){
     .carousel_divs{
         width: 60%;
         margin: 10px 0 0 18%;
+        float: none;
+    }
+    .carousel{
+        padding-bottom: 75px;
+    }
+
+    #carousel_divs_last{
+        display: none;
+    }
+    
+}
+
+
+@media screen and (max-width:425px){
+    .carousel_divs{
+        width: 90%;
+        margin: 0 auto;
+        height: 300px;
+    }
+    .carousel_cart_img{
+        height: 150px;
+    }
+
+    .carousel_cart{
+        height: 260px;
+    }
+
+    .c_details_p{
+        font-size: 11px;
+    }
+    .carousel_headers{
+        font-size: 13px;
     }
 }
+
 
 @media screen and (max-width:350px){
     .carousel_divs{
@@ -235,3 +395,191 @@ video{
 
 
 /* carousel */
+
+/* category_shops */
+
+#category_shops{
+    min-height: 300px;
+    width: 100%;
+    background: black;
+}
+
+#shops{
+    width: 90%;
+    min-height: 100px;
+    padding: 10px;
+    border-bottom: 1px solid silver;
+    border-radius: 0 10px 10px 10px;
+    margin:0 auto;
+    color: white;
+}
+
+.ul_shops{
+    margin-left: 0;
+}
+
+.ul_shops li{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    float: left;
+    border:1px solid silver;
+    background: radial-gradient(#333,#6666,#999);
+    width: 9%;
+    margin-top:10px;
+    margin-left: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0;
+}
+
+.ul_shops li:hover{
+    background: #111;
+}
+
+#categories{
+    width: 90%;
+    min-height: 100px;
+    padding: 10px;
+    border-bottom: 1px solid silver;
+    border-radius: 0 10px 10px 10px;
+    margin:0 auto;
+    color: white;
+    
+}
+
+
+@media screen and (max-width:425px){
+    .ul_shops li{
+        width: 100%;
+        float: none;
+    }
+}
+
+/* category_shops */
+
+
+
+/* what  we do */
+
+#what_wedo{
+    min-height: 300px;
+    width: 100%;
+    background: black;
+    position: relative;
+  
+}
+
+.column_wedo{
+    width: 31%;
+    height: 200px;
+    border-bottom: 1px  solid silver;
+    border-top: 1px  solid silver;
+    border-right: 1px  solid silver;
+    border-radius: 0 0px 10px 10px;
+    margin:0 auto;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+    text-align: center;
+    overflow-y:scroll;
+    padding: 0 0 10px 10px;
+}
+
+.wedo_header{
+    padding: 10px 0;
+    background: linear-gradient(#333,#666,#999);
+    color: white;
+}
+
+.column_wedo p{
+    margin-top: 10px;
+}
+
+.column_wedo p i{
+    float: left;
+    color: #09ff00;
+}
+
+
+@media screen and (max-width:425px){
+    .column_wedo{
+        width: 100%;
+        float: none;
+        margin-left: 0;
+        padding:0 0 10px 0;
+    }
+
+    .wedo_header{
+
+    }
+}
+
+/* what  we do */
+
+
+/* how to*/
+
+#how_to{
+    min-height: 300px;
+    width: 100%;
+    text-align: center;
+    
+    margin: 0 auto;
+    background: black;
+    color: white;
+    border-bottom: 1px solid silver;
+}
+
+#how_to h4{
+    color: white;
+    padding: 10px 0;
+    box-shadow: 0 0 10px lime;
+}
+
+.how_to_div{
+    width: 30%;
+    float: left;
+    margin-top: 10px;
+}
+
+.how_to_p{
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.how_to_p:hover{
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width:425px){
+    .how_to_div{
+        width: 100%;
+        float: none;
+    }
+}
+
+/* how to */
+
+
+
+
+
+
+/* footer */
+
+#footer{
+    min-height: 100px;
+    width: 100%;
+    background: #000000;
+    color:white;
+    text-align: center;
+    box-shadow: 0 0 10px lime;
+    border-top: 1px solid silver;
+    padding-top: 20px;
+}
+
+/* footer */

@@ -1,0 +1,178 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    
+}
+
+
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+/* navbar */
+
+.navbar{
+    height: 40px;
+    background: black;
+    position: fixed;
+    top: 0;
+    opacity: 1;
+    width: 100%;
+    z-index:10000;
+    box-shadow: 0 0 7px lime;
+}
+
+#menu{
+    color: white;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 5px 10px;
+    box-shadow: 0 0 5px white;
+}
+
+
+#menu:hover{
+    background: rgb(7, 104, 57);
+    padding: 5px 12px;
+}
+
+#search_form{
+    padding: 5px 11px;
+    position: relative;
+    
+    width: 40%;
+    left: 30%;
+    
+}
+
+.search_text{
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 0 0 9px rgb(9, 107, 24);
+    font-size: 17px;
+    border: 1px solid rgb(160, 138, 138);
+    padding: 2px;
+    background: none;
+    color: white;
+
+}
+
+.search_button{
+    background: none;
+    position: absolute;
+    right: 13px;
+    border: 0;
+    color: white;
+    top: 9px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+
+/* navbar */
+
+/* menu */
+
+#menu_div{
+    height: 100vh;
+    width: 100%;
+    background: #000000;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    color: white;
+    z-index: 10000;
+    display: none;
+}
+
+#menu_items a{
+    text-decoration: none;
+    color:white;
+}
+
+#menu_items{
+    width: 500px;
+    height: 500px;
+    background: black;
+    color: white;
+    
+    opacity: 1;
+    
+}
+
+#menu_items p{
+    border-bottom: 1px solid silver;
+    border-bottom-right-radius: 10px;
+    padding: 5px 0;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#close{
+    padding: 7px;
+    border-radius: 50%;
+    color: red;
+    background: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    box-shadow: 0 0 10px red;
+    cursor: pointer;
+}
+
+#close:hover{
+    background: red;
+    color: white;
+    padding: 11px;
+}
+
+#menu_items p:hover{
+    box-shadow: 0 0 5px limegreen;
+    border-radius: 0;
+}
+
+.menu_icon{
+    float: left;
+    margin-left: 10px;
+}
+
+
+@media screen and (max-width:425px){
+    #menu_items{
+        width: 100%;
+        font-size: 15px;
+    }
+}
+
+
+/* menu */
+
+
+
+
+
+/* footer */
+
+#footer{
+    min-height: 100px;
+    width: 100%;
+    background: #000000;
+    color:white;
+    text-align: center;
+    box-shadow: 0 0 10px lime;
+    border-top: 1px solid silver;
+    padding-top: 20px;
+}
+
+/* footer */
