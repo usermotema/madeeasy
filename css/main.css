@@ -324,12 +324,43 @@ video{
     float: right;
     text-indent: 0;
     border-radius: 20px 0 0 0;
-    padding: 1px 0;
+    padding: 3px 0 1px 3px;
     overflow: visible;
     font-size: 14px;
 }
 
+.fa-heart{
+    padding:1px 2px;
+    border-radius: 10px;
+    background: rgb(253, 5, 5);
+    margin-left: 6px;
+    cursor: pointer;
+    color: white;
+}
 
+.fa-thumbs-up{
+    padding:1px 2px;
+    border-radius: 10px;
+    background: rgb(212, 4, 119);
+    margin-left: 6px;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+.fa-heart:hover{
+
+    background: rgba(218, 10, 27, 0.76);
+    box-shadow: 0 0 5px lime;
+    
+}
+
+.fa-thumbs-up:hover{
+
+    background: rgb(37, 169, 230);
+    box-shadow: 0 0 5px lime;
+}
 @media screen and (max-width:1095px){
     .carousel_divs{
         width: 29%;

@@ -171,6 +171,21 @@
 }
 
 
+
+.fa-heart:hover{
+
+    background: rgba(218, 10, 27, 0.76);
+    box-shadow: 0 0 5px lime;
+    
+}
+
+.fa-thumbs-up:hover{
+
+    background: rgb(37, 169, 230);
+    box-shadow: 0 0 5px lime;
+}
+
+
 @media screen and (max-width:425px){
     .wrapper{
         width: 100%;
@@ -187,9 +202,12 @@
     .wrapper_divs_details{
         height: 80px;
     }
+    .sales_buy{
+        font-size: 10px;
+    }
 
     .wrapper_divs_img{
-        height: 150px;
+        height: 140px;
     }
     .likes_sales p{
         font-size: 13px;
